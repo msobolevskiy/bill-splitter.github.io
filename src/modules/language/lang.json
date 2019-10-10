@@ -1,0 +1,24 @@
+[{
+	"en": {
+		"people": "How many people?",
+		"next": "next",
+		"bill": "Enter total bill",
+		"curr": "BYN",
+		"tips": "Maybe add some tips?",
+		"totalBill": "Total bill",
+		"left": "Left",
+		"person": "Person",
+		"push": "push"
+	},
+	"ru": {
+		"people": "Сколько вас человек?",
+		"next": "Вперед",
+		"bill": "Введите сумму счета",
+		"curr": "РУБ",
+		"tips": "Хотите оставить чаевые?",
+		"totalBill": "Общая сумма",
+		"left": "Осталось",
+		"person": "Гость",
+		"push": "добавить"
+	}
+}]

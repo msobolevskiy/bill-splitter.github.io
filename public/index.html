@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>JS Project</title>
+	<link rel="stylesheet" href="../src/style.css" />
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="module" src="../src/modules/language/lang.js"></script>
+</head>
+
+<body>
+	<main>
+
+
+		<div class="login-screen">
+			<div class="wrapper">
+				<div class="wrapper-for-login">
+					<div class="login-header">
+						<h1>Log in!</h2>
+					</div>
+					<div class="login-main">
+						<div class="login-half-left">
+							<div class="login-area">
+								<form class="login-form">
+									<div class="field">
+										<label for="login-email-field">Email</label>
+										<input id="user-name-input-login" type="text" name="email" value="" required>
+									</div>
+									<div class="field">
+										<label for="login-password-field">Password</label>
+										<input id="password-input-login" name="password" type="password" required>
+									</div>
+								</form>
+							</div>
+
+							<div class="login-button-area">
+								<button id="button-login" class="recaptcha-trigger-button">
+									<span class="label">Log in</span>
+									<span class="spinner"></span>
+								</button>
+								<a href="#" class="forgot-password-link">
+									Forgot Password?
+								</a>
+							</div>
+
+						</div>
+						<div class="login-divider">
+							<div class="bar bar-top"></div>
+							<span class="login-or">OR</span>
+							<div class="bar bar-bottom"></div>
+						</div>
+						<div class="login-half-right">
+							<div class="login-social-buttons">
+								<a id="login-with-twitter" href="/auth/twitter" data-network="Twitter"
+									class="social-account-button twitter-button button-fullwidth">
+									<svg class="icon-twitter" width="26" height="26">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+									</svg>
+									<span>Log In with Twitter</span>
+								</a>
+								<a id="login-with-github" href="/auth/github" data-network="Github"
+									class="github-button social-account-button button-fullwidth">
+									<svg class="icon-github" width="26" height="26">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#octocat"></use>
+									</svg>
+									<span>Log In with Instagram</span>
+								</a>
+								<a id="login-with-facebook" href="/auth/facebook" data-network="Facebook"
+									class="social-account-button facebook-button button-fullwidth">
+									<svg class="icon-facebook" width="26" height="26">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+									</svg>
+									<span>Log In with Facebook</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="signup-callout">
+						Need an account?
+						<a href="#">Sign up now!</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="wrapper">
+				<div class="wrapper-for-login wrapper-for-signUp">
+					<div class="login-header">
+						<h1>Sign up!</h2>
+					</div>
+					<div class="login-main">
+						<div class="login-half-left">
+							<div class="login-area">
+								<form class="login-form">
+									<div class="field">
+										<label for="login-email-field">Your name</label>
+										<input id="user-name" type="text" name="email" value="" required>
+									</div>
+									<div class="field">
+										<label for="login-email-field">Email</label>
+										<input id="email-input" type="text" name="email" value="" required>
+									</div>
+									<div class="field">
+										<label for="login-password-field">Choose Password</label>
+										<input id="password-input" name="password" type="password" required>
+									</div>
+								</form>
+							</div>
+
+							<div class="login-button-area">
+								<button id="button-submit" class="recaptcha-trigger-button submit-trigger-button">
+									<span class="label">Submit</span>
+									<span class="spinner"></span>
+								</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="wrapper" id="app-wrapper">
+			<div class="leftpart">
+
+				<div class="left-part-wrap" id="menuSelectTheNumberOfPeople">
+					<div class="top">
+						<p class="people-lang">How many people?</p>
+					</div>
+					<div class="middle">
+						<div class="middle-left ">
+							<div class="middle-left-buttonBox middle-left-buttonBox-plus"><button>+</button></div>
+							<div class="middle-left-buttonBox middle-left-buttonBox-minus"><button>-</button></div>
+						</div>
+						<div class="middle-right">
+							<p class="middle-right-numberOfPeople"></p>
+						</div>
+					</div>
+					<div class="button"><button class="buttonNext next-lang" id="buttonNumberOfPeople">Next</button>
+					</div>
+				</div>
+
+
+				<div class="left-part-wrap hideLeftPart" id="menuBillTotal">
+					<div class="top">
+						<p class="bill-lang">Enter total bill</p>
+					</div>
+					<div class="middle">
+						<div class="middle-form">
+							<p class="middle-form-text curr-lang">BYN</p>
+							<input id="inputForSum" type="number" class="middle-form-summa" required>
+						</div>
+						<div class="tips">
+							<div class="sup-heading tips-lang">
+								Maybe add some tips?
+							</div>
+							<div class="middle-form">
+								<p class="middle-form-text"> % </p>
+								<input id="tips" class="tips-form-summa" type="number">
+							</div>
+						</div>
+					</div>
+					<div class="button"><button class="buttonNext next-lang" id="buttonBillTotal">Next</button></div>
+				</div>
+
+
+				<div class="left-part-wrap hideLeftPart" id="menuBillSplit">
+					<div class="top partForInformation">
+						<p id="totalSum"></p>
+						<p><span class="left-lang">Left</span> <span class="leftsum"></span> <span
+								class="curr-lang">BYN</span></p>
+					</div>
+					<div class="middle">
+						<div class="middle-form">
+							<p class="middle-form-text curr-lang">BYN</p>
+							<input id="adddish" type="number" class="middle-form-summa" required>
+						</div>
+						<div class="middle-form-checkboxes"></div>
+					</div>
+					<div class="button"><button id='buttonAddDish' class="buttonNext push-lang">Push</button></div>
+				</div>
+
+
+			</div>
+			<div class="control-panel">
+				<a class="log-in-btn"><img src="./icons/login.svg"></a>
+				<div class="lang">
+					<a lang-data="ru">RU</a>
+					<a lang-data="en">EN</a>
+				</div>
+				<div class="username">Guest</div>
+			</div>
+			<div class="rightpart" id="list">
+			</div>
+			<div class="startOverDiv hideLeftPart"><button id="button-startOver" class="buttonRestart ">start over</button></div>
+		</div>
+
+	</main>
+
+	<script type="module" src="../src/modules/main.js"></script>
+</body>
+
+</html>
