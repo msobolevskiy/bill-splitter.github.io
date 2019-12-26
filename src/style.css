@@ -235,7 +235,7 @@ body {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	padding-top: 100px;
+	/* padding-top: 100px; */
 	position: relative;
 }
 
@@ -664,4 +664,61 @@ body {
 	right: 50%;
     top: 50%;
     transform: translateX(50%);
+}
+@media (max-width: 768px){
+	.people-lang, .bill-lang, #totalSum{
+		font-size: 30px !important;
+	}
+	.middle-right-numberOfPeople{
+		font-size: 90px !important;
+	}
+	.middle-left button{
+		width: 50px;
+    	height: 50px;
+	}
+	.left-part-wrap{
+		padding-top: 0;
+	}
+	#inputForSum, #tips{
+		height: 40px;
+	}
+	.middle-form-text{
+		font-size: 17px;
+		padding-right: 19px;
+	}
+	.sup-heading{
+		font-size: 20px;
+		padding-top: 20px;
+    	padding-bottom: 10px;
+	}
+	.button, #buttonAddDish{
+		margin-top: 65px;
+	}
+	#leftSum{
+		font-size: 30px;
+	}
+	.personalCount{
+		font-size: 18px;
+	}
+	.top{
+		height: 20%;
+	}
+	.middle{
+		height: 40%;
+	}
+	.bottom {
+		height: 40%;
+	}
+	.totalSum{
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+	.leftSum{
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	.middle{
+		padding-top: 77px;
+	}
+	
 }
